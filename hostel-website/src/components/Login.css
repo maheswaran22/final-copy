@@ -1,0 +1,231 @@
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 20px;
+}
+
+.auth-wrapper {
+  background: white;
+  border-radius: 20px;
+  padding: 40px;
+  width: 100%;
+  max-width: 480px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.auth-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.auth-header h1 {
+  color: #333;
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.auth-header p {
+  color: #666;
+  font-size: 1.1em;
+}
+
+/* Remove these sections */
+.user-type-selector {
+  display: none;
+}
+
+.type-option {
+  display: none;
+}
+
+.type-option.selected {
+  display: none;
+}
+
+.type-option .icon {
+  display: none;
+}
+
+.email-verification-group {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.otp-button {
+  padding: 8px 15px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.otp-button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.verification-status {
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.verification-status.success {
+  color: #4CAF50;
+  background-color: #e8f5e9;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  color: #333;
+  font-weight: 500;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #e1e1e1;
+  border-radius: 8px;
+  font-size: 1em;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus {
+  border-color: #667eea;
+  outline: none;
+}
+
+.auth-button {
+  width: 100%;
+  padding: 14px;
+  background: #667eea;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1em;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.auth-button:hover {
+  background: #5a6fd6;
+}
+
+.auth-footer {
+  text-align: center;
+  margin-top: 25px;
+  color: #666;
+}
+
+.switch-btn {
+  background: none;
+  border: none;
+  color: #667eea;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0;
+  font-size: 1em;
+}
+
+.switch-btn:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 480px) {
+  .auth-wrapper {
+    padding: 20px;
+  }
+  
+  .user-type-selector {
+    flex-direction: column;
+  }
+  
+  .type-option {
+    width: 100%;
+  }
+}
+
+.user-toggle {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 30px;
+  transition: opacity 0.3s ease;
+}
+
+.user-toggle.hidden {
+  display: none;
+}
+
+.toggle-type {
+  padding: 10px 20px;
+  border: 2px solid #667eea;
+  background: none;
+  color: #667eea;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  min-width: 140px;
+}
+
+.toggle-type.active {
+  background: #667eea;
+  color: white;
+}
+
+.selected-type {
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 10px;
+  background: #f8f9fa;
+  border-radius: 8px;
+  color: #333;
+  font-weight: 600;
+}
+
+.back-button {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  padding: 8px 15px;
+  background: none;
+  border: 1px solid #667eea;
+  color: #667eea;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.back-button:hover {
+  background: #667eea;
+  color: white;
+}
+
+.admin-mode {
+  border-left: 4px solid #e74c3c;
+}
+
+.student-mode {
+  border-left: 4px solid #2ecc71;
+}
+
+.admin-button {
+  background: #e74c3c;
+}
+
+.admin-button:hover {
+  background: #c0392b;
+}
